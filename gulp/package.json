@@ -1,0 +1,28 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp --gulpfile gulpfile-dev.js",
+    "build": "gulp --gulpfile gulpfile-build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ZhangYi",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.14.3",
+    "gulp": "^3.9.1",
+    "gulp-buffer": "0.0.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.1.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "gulp-rev-collector": "^1.0.5"
+  }
+}
