@@ -75,7 +75,11 @@
     "fix": "node_modules/.bin/standard --fix",
     "start": "cross-env NODE_ENV=development PORT=4500 node build/webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production node_modules/.bin/webpack --progress --colors --config ./build/webpack.config.production.js",
-    "build:online": "cross-env NODE_ENV=production_online node_modules/.bin/webpack --progress --colors --config ./build/webpack.config.production.js",
-    "precommit": "lint-staged"
+    "build:online": "cross-env NODE_ENV=production_online node_modules/.bin/webpack --progress --colors --config ./build/webpack.config.production.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
